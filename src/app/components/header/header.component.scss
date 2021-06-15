@@ -15,18 +15,22 @@ header {
     .header {
 //======================= Header Logo ================================//
         @media only screen and (max-width: 995px) {
-            padding: 0 3rem;
+            padding: 0 30px;
         }
 
         @media only screen and (max-width: 760px) {
             flex-wrap: wrap !important;
-            padding: 2rem;
+            padding: 20px;
+        }
+
+        @media only screen and (max-width: 320px) {
+            padding: 10px;
         }
 
         &__logo {
             flex: 0.2;
             @media only screen and (max-width: 760px) {
-                flex: 0.8;
+                flex: 0.4;
             }
             img {
                 width: 70%;
@@ -34,6 +38,10 @@ header {
 
                 @media only screen and (max-width: 760px) {
                     width: 130px;
+                }
+
+                @media only screen and (max-width: 320px) {
+                    width: 70px;
                 }
             }
         }

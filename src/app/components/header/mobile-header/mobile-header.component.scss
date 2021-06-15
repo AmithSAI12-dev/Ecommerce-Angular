@@ -1,0 +1,34 @@
+//========================== Mobile Header ======================================//
+.hamburger {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+    margin-right: 2rem;
+
+    @media only screen and (max-width: 730px) {
+        display: flex;
+    }
+
+    .line {
+        flex: 0.2;
+        width: 100%;
+        height: 1px;
+        display: block;
+        margin: auto;
+        background-color: black;
+
+        &:nth-child(2) {
+            margin-top: 5px;
+        }
+
+        &:last-child {
+            margin-top: 5px;
+        }
+    }
+}
+
