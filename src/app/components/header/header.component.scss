@@ -18,11 +18,23 @@ header {
             padding: 0 3rem;
         }
 
+        @media only screen and (max-width: 760px) {
+            flex-wrap: wrap !important;
+            padding: 2rem;
+        }
+
         &__logo {
             flex: 0.2;
+            @media only screen and (max-width: 760px) {
+                flex: 0.8;
+            }
             img {
                 width: 70%;
                 object-fit: cover;
+
+                @media only screen and (max-width: 760px) {
+                    width: 130px;
+                }
             }
         }
 
@@ -30,6 +42,10 @@ header {
         &__nav {
             flex: 0.15;
             height: 72px;
+            
+            @media only screen and (max-width: 760px) {
+                display: none !important;
+            }
 
             &Item {
                 cursor: pointer;
@@ -37,13 +53,14 @@ header {
                 border: 1px solid transparent;
                 border-top: none;
                 border-bottom: none;
+                padding: 2rem;
 
                 a, a:link, a:visited {
                     text-decoration: none;
                     font-size: 1.3rem;
                     font-weight: 300;
                     color: black;
-                    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+                    // transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
                 }
 
                 &:hover {
@@ -56,46 +73,25 @@ header {
                 }
             }
 
-//======================== Header Nav Dropdown =================================//
-            
-            &Dropdown {
-                visibility: hidden;
-                position: fixed;
-                top: 72px;
-                left: 0px;
-                width: 100vw;
-                height: max-content;
-                padding: 1.5rem 0rem;
-                font-size: 1.1rem;
-                font-weight: 700;
-                background-color: white;
-                border-top: 1px solid #e8e8e8;
-                transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            
-                & > a {
-                    text-decoration: none;
-                    color: #5a5a5a;
-                    transition: color 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
-                    margin:0 1.5%;
-            
-                    &:hover {
-                        color: black;
-                    }
-                }
-            } 
-
         }
 
 //========================= Header Search Form =================================//
         
         &__search {
             flex: 0.45;
+            @media only screen and (max-width: 760px) {
+                flex: 1 !important;
+                order: 1;
+                margin-top: 1rem;
+            }
             &Btn {
                 height: 37px;
                 padding: 0rem 1.5rem;
                 background-color: white;
                 border: 1px solid #e8e8e8;
                 border-right: none;
+
+                
             }
         }
 
@@ -109,6 +105,22 @@ header {
             box-shadow: none;
             border-radius: 0px;
             outline: none;
+
+            @media only screen and (max-width: 760px) {
+                width: 87vw;
+            }
+
+            @media only screen and (max-width: 630px) {
+                width: 83vw;
+            }
+
+            @media only screen and (max-width: 520px) {
+                width: 78vw;
+            }
+
+            @media only screen and (max-width: 385px) {
+                width: 75vw;
+            }
         }
 
 //============================ Header Icons ====================================//
@@ -116,10 +128,37 @@ header {
         &__icon {
             padding-left: 30px;
             flex: 0.15;
+            cursor: pointer;
+
+            @media only screen and (max-width: 760px) {
+                flex: 0.2 !important;
+            }
+
+            & > img {
+                @media only screen and (max-width: 790px) {
+                    width: 35px;
+                }
+
+                @media only screen and (max-width: 760px) {
+                    width: 55px;
+                }
+
+                @media only screen and (max-width: 630px) {
+                    display: none;
+                }
+            }
 
             a img {
                 width: 20px;
                 margin-left: 20px;
+
+                @media only screen and (max-width: 790px) {
+                    width: 15px;
+                }
+
+                @media only screen and (max-width: 760px) {
+                    width: 20px;
+                }
             }
         }
     }
