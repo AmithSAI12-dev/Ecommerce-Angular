@@ -2,6 +2,7 @@ header {
     position: fixed;
     top: 0px;
     width: 100vw;
+    z-index: 11;
     height: max-content;
     background-color: white;
 
@@ -30,7 +31,7 @@ header {
         &__logo {
             flex: 0.2;
             @media only screen and (max-width: 760px) {
-                flex: 0.4;
+                flex: 0.8;
             }
             img {
                 width: 70%;
@@ -140,6 +141,10 @@ header {
 
             @media only screen and (max-width: 760px) {
                 flex: 0.2 !important;
+            }
+
+            @media only screen and (max-width: 378px) {
+                padding-left: 0px;
             }
 
             & > img {

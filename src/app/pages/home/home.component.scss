@@ -1,8 +1,20 @@
 .intro {
     width: 100vw;
-    height: 75vh;
-    background-image: url('https://cdn.shopify.com/s/files/1/0274/4293/7933/files/Banners-28.5.21-New-Balance-Desktop_1.jpg?v=1622130089');
+    min-height: 600px;
+    height: 80vh;
+    position: relative;
+    background-image: url('https://cdn.shopify.com/s/files/1/0274/4293/7933/files/super-baggy-denim-main-banner-2_1.jpg?v=1624020197');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+
+    &__content {
+        position: absolute;
+        top: calc(65% / 2);
+        left: 20%;
+
+        @media only screen and (max-width: 620px){
+            left: 10%;
+        }
+    }
 }

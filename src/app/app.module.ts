@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { HomeComponent } from './pages/home/home.component';
 import { MobileHeaderComponent } from './components/header/mobile-header/mobile-header.component';
+import { CustomBtnComponent } from './components/custom-btn/custom-btn.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     HomeComponent,
-    MobileHeaderComponent
+    MobileHeaderComponent,
+    CustomBtnComponent
   ],
   imports: [
     BrowserModule,
