@@ -7,6 +7,8 @@ import { HeaderComponent } from './components/header/header.component';
 import { HomeComponent } from './pages/home/home.component';
 import { MobileHeaderComponent } from './components/header/mobile-header/mobile-header.component';
 import { CustomBtnComponent } from './components/custom-btn/custom-btn.component';
+import { BrandPreviewComponent } from './components/brand-preview/brand-preview.component';
+import { BrandComponent } from './components/brand-preview/brand/brand.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { CustomBtnComponent } from './components/custom-btn/custom-btn.component
     HeaderComponent,
     HomeComponent,
     MobileHeaderComponent,
-    CustomBtnComponent
+    CustomBtnComponent,
+    BrandPreviewComponent,
+    BrandComponent
   ],
   imports: [
     BrowserModule,

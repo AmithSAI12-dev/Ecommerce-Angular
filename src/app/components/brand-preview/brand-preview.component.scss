@@ -1,0 +1,8 @@
+.d-flex {
+    &:nth-child(1) {
+        flex: 0.7;
+    }
+    &:nth-child(2) {
+        flex: 0.3;
+    }
+}
