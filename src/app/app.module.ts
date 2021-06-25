@@ -9,6 +9,8 @@ import { MobileHeaderComponent } from './components/header/mobile-header/mobile-
 import { CustomBtnComponent } from './components/custom-btn/custom-btn.component';
 import { BrandPreviewComponent } from './components/brand-preview/brand-preview.component';
 import { BrandComponent } from './components/brand-preview/brand/brand.component';
+import { CategoryComponent } from './components/category-preview/category/category.component';
+import { CategoryPreviewComponent } from './components/category-preview/category-preview.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { BrandComponent } from './components/brand-preview/brand/brand.component
     MobileHeaderComponent,
     CustomBtnComponent,
     BrandPreviewComponent,
-    BrandComponent
+    BrandComponent,
+    CategoryComponent,
+    CategoryPreviewComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,81 @@
+.category {
+    width: 100%;
+    min-width: 360px;
+    height: 599px;
+    position: relative;
+    overflow: hidden;
+    background-image: url(https://cdn.shopify.com/s/files/1/0274/4293/7933/files/0001_NK7B9747_x1200.jpg?v=1624621261);
+    background-size: cover;
+    background-position: center center;
+
+/*============================== OVERLAY STYLES =========================*/
+
+    &__overlay {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0px;
+        background: #292d2b;
+        opacity: 0;
+        transition: all .3s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+
+/*============================ CATEGORY CONTENT ==============================*/
+
+    &__content {
+        position: absolute;
+        top: 0px;
+        left: 40px;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    &__title {
+        display: inline-block;
+        color: white;
+        font-size: 3.6rem;
+        font-weight: 900;
+        transform-origin: top left;
+        transition: all 0.3s cubic-bezier(0.215, 0.610, 0.355, 1);
+
+        &:first-child {
+            transform: rotate(270deg);
+        }
+
+        &:last-child {
+            transform: rotate(270deg) translateX(270%) translateY(-480%);
+        }
+    }
+
+    &__btn {
+        position: absolute;
+        bottom: 20px;
+        left: 100px;
+        transform: translateY(250%);
+        transition: all 0.3s cubic-bezier(0.215, 0.610, 0.355, 1);
+
+    }
+
+/*================================= CATEGORY HOVER STYLES ===================================*/    
+    &:hover &__overlay {
+        opacity: .3;
+    }
+
+    &:hover &__title {
+
+        &:first-child {
+            transform: rotate(270deg) translateX(-130%);
+        }
+
+        &:last-child {
+            transform: rotate(270deg) translateX(140%) translateY(-480%);
+        }
+
+    }
+
+    &:hover &__btn {
+        transform: translateY(0);
+    }
+}

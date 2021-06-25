@@ -1,6 +1,8 @@
 .brand {
     width: 100%;
     background-color: #FBFBFB;
+    
+/*============================ FLEXBOX STYLING =============================*/
     .d-flex {
         &:nth-child(1) {
             flex: 0.7;
