@@ -11,6 +11,7 @@ import { BrandPreviewComponent } from './components/brand-preview/brand-preview.
 import { BrandComponent } from './components/brand-preview/brand/brand.component';
 import { CategoryComponent } from './components/category-preview/category/category.component';
 import { CategoryPreviewComponent } from './components/category-preview/category-preview.component';
+import { PosterComponent } from './components/poster/poster.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { CategoryPreviewComponent } from './components/category-preview/category
     BrandPreviewComponent,
     BrandComponent,
     CategoryComponent,
-    CategoryPreviewComponent
+    CategoryPreviewComponent,
+    PosterComponent
   ],
   imports: [
     BrowserModule,
