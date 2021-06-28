@@ -12,6 +12,8 @@ import { BrandComponent } from './components/brand-preview/brand/brand.component
 import { CategoryComponent } from './components/category-preview/category/category.component';
 import { CategoryPreviewComponent } from './components/category-preview/category-preview.component';
 import { PosterComponent } from './components/poster/poster.component';
+import { ProductPreviewComponent } from './components/product-preview/product-preview.component';
+import { ProductComponent } from './components/product-preview/product/product.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { PosterComponent } from './components/poster/poster.component';
     BrandComponent,
     CategoryComponent,
     CategoryPreviewComponent,
-    PosterComponent
+    PosterComponent,
+    ProductPreviewComponent,
+    ProductComponent
   ],
   imports: [
     BrowserModule,

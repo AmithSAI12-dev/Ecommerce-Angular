@@ -1,7 +1,7 @@
 .category {
     width: 100%;
+    height: 60vh;
     min-width: 360px;
-    height: 599px;
     position: relative;
     overflow: hidden;
     background-image: url(https://cdn.shopify.com/s/files/1/0274/4293/7933/files/0001_NK7B9747_x1200.jpg?v=1624621261);
@@ -70,7 +70,7 @@
         }
 
         &:last-child {
-            transform: rotate(270deg) translateX(140%) translateY(-480%);
+            transform: rotate(270deg) translateX(120%) translateY(-480%);
         }
 
     }
