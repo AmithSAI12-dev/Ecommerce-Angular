@@ -1,3 +1,4 @@
+/*========================== INTRO SECTION ==============================*/
 .intro {
     width: 100vw;
     min-height: 600px;
@@ -8,6 +9,8 @@
     background-size: cover;
     background-position: center center;
 
+    // Intro Content
+
     &__content {
         position: absolute;
         top: calc(65% / 2);
@@ -16,5 +19,13 @@
         @media only screen and (max-width: 620px){
             left: 10%;
         }
+    }
+}
+
+/*========================== CATEGORY SECTION ===========================*/
+
+.category {
+    h2,h3 {
+        text-align: right;
     }
 }
